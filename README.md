@@ -1,6 +1,6 @@
 # Political Lean Classification with NLP
 
-An experimental NLP project that classifies Reddit posts using the dataset's **Liberal** and **Conservative** labels. It investigates whether sentiment, moral-language signals, and contextual embeddings improve on a TF-IDF baseline.
+An experimental NLP project that classifies Reddit posts using the original dataset's **Liberal** and **Conservative** labels. The project investigates whether sentiment, moral-language signals, and contextual embeddings improve on a TF-IDF baseline.
 
 The project combines pretrained transformer feature extraction with classical machine learning, then compares predictive performance, feature contributions, and runtime. In the main saved logistic regression comparison, **TF-IDF alone achieved 78.18% test accuracy and 0.7607 macro F1**, outperforming the combined feature model.
 
