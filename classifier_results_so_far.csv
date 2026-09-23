@@ -1,0 +1,16 @@
+Feature Set,Classifier,Accuracy,Test Macro F1,Test Weighted F1,CV Macro F1,Runtime Seconds,Best Parameters
+TF-IDF + semantic,Linear SVM,0.7693504472967717,0.7497221192122123,0.7703591252677837,0.7348280341864333,77.01274108886719,{'classifier__C': 0.5}
+TF-IDF + semantic,Logistic Regression,0.7693504472967717,0.7494845843606455,0.7702559355245233,0.7349944241633766,170.88950777053833,"{'classifier__C': 10, 'classifier__penalty': 'l2', 'classifier__solver': 'liblinear'}"
+Semantic only,RBF SVM,0.7693504472967717,0.7463630215780661,0.7688455555174203,0.7406028614967597,2816.4734930992126,"{'classifier__C': 3, 'classifier__gamma': 0.001}"
+TF-IDF + semantic,RBF SVM,0.7732399844418514,0.7449693354352037,0.7699703649889799,0.7316547565819896,251.16629695892334,"{'classifier__C': 3, 'classifier__gamma': 'scale', 'svd__n_components': 200}"
+TF-IDF only,SGD Linear SVM,0.7588486970050564,0.7407676044885347,0.7609257591792665,0.7331270148271672,4.189183950424194,"{'classifier__alpha': 0.0001, 'classifier__penalty': 'l2'}"
+TF-IDF only,Logistic Regression,0.7611824192921043,0.7394195964603453,0.7615924859403473,0.7419306364637693,8.807710886001587,"{'classifier__C': 1, 'classifier__penalty': 'l2', 'classifier__solver': 'liblinear'}"
+TF-IDF only,Linear SVM,0.7596266044340724,0.7377220042548752,0.760039342526278,0.7418533816756769,3.433366060256958,{'classifier__C': 0.1}
+TF-IDF only,RBF SVM,0.7549591598599766,0.7226922781921727,0.7505440791300605,0.7161982684603087,145.07182598114014,"{'classifier__C': 3, 'classifier__gamma': 'scale', 'svd__n_components': 200}"
+Semantic only,Extra Trees,0.7491248541423571,0.7133743099435026,0.743179554391226,0.7057845987272467,2178.5137388706207,"{'classifier__max_depth': 10, 'classifier__max_features': 0.5, 'classifier__min_samples_leaf': 2, 'classifier__n_estimators': 300}"
+TF-IDF + semantic,Extra Trees,0.7456242707117853,0.708732445309187,0.7392538790029214,0.7070995073780437,1203.822186946869,"{'classifier__max_depth': 20, 'classifier__max_features': 'sqrt', 'classifier__min_samples_leaf': 5, 'classifier__n_estimators': 300, 'svd__n_components': 50}"
+Semantic only,Logistic Regression,0.7086736678335278,0.6958457064687154,0.7142373101678876,0.6927852668598788,84.30635285377502,"{'classifier__C': 0.01, 'classifier__penalty': 'l2', 'classifier__solver': 'liblinear'}"
+Semantic only,Linear SVM,0.7078957604045119,0.6956358073295359,0.7136218237592972,0.6925771787426303,32.27178692817688,{'classifier__C': 0.001}
+Semantic only,SGD Linear SVM,0.7067288992609879,0.6947652008515248,0.7125579703917284,0.6834834770333825,4.4541099071502686,"{'classifier__alpha': 0.01, 'classifier__penalty': 'elasticnet'}"
+TF-IDF only,Extra Trees,0.7429015947102294,0.6863116112609013,0.7255411144396022,0.6770971449551221,682.0884668827057,"{'classifier__max_depth': 20, 'classifier__max_features': 0.5, 'classifier__min_samples_leaf': 5, 'classifier__n_estimators': 300, 'svd__n_components': 100}"
+TF-IDF + semantic,SGD Linear SVM,0.692337611824193,0.6815121766727509,0.6988008990559611,0.682475076220703,12.464481115341187,"{'classifier__alpha': 0.01, 'classifier__penalty': 'elasticnet'}"

@@ -1,0 +1,6 @@
+.venv/
+.venv1/
+__pycache__/
+.ipynb_checkpoints/
+data/reddit_depression_dataset.csv
+reddit_with_semantic_features.csv
